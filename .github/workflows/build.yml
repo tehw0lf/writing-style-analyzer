@@ -26,3 +26,4 @@ jobs:
       artifact_path: "dist"
       publish_github_release: "true"
       publish_python_libraries: "false"
+      release_pre: "echo \"RELEASE_TAG=v$(cat pyproject.toml | grep '^version' | head -1 | awk -F '\"' '{print $2}')\" >> $GITHUB_ENV"
