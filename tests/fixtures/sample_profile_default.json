@@ -1,0 +1,77 @@
+{
+  "profile_name": "generic-academic-default",
+  "created_at": "2025-01-15T10:00:00Z",
+  "analyzed_files": 3,
+  "primary_language": "de",
+  "languages_detected": ["de"],
+  "metrics": {
+    "basic": {
+      "total_words": 1000,
+      "total_sentences": 45,
+      "avg_sentence_length": 22.2,
+      "total_paragraphs": 8,
+      "avg_paragraph_length": 5.6,
+      "lexical_diversity": 0.35,
+      "complexity_ratio": 0.30
+    },
+    "transitions": {
+      "total_transitions": 42,
+      "transition_density": 4.2,
+      "by_category": {
+        "additive": {"count": 12, "examples": ["außerdem", "zusätzlich", "darüber hinaus"]},
+        "contrastive": {"count": 8, "examples": ["jedoch", "allerdings", "dennoch"]},
+        "causal": {"count": 10, "examples": ["daher", "somit", "folglich"]},
+        "temporal": {"count": 9, "examples": ["zunächst", "dann", "schließlich"]},
+        "conclusive": {"count": 3, "examples": ["insgesamt", "zusammenfassend"]}
+      }
+    },
+    "voice_and_style": {
+      "passive_ratio": 0.40,
+      "semicolon_usage": 0.021,
+      "formality_level": "academic-formal"
+    }
+  },
+  "transitions": {
+    "additive": [
+      "außerdem", "zusätzlich", "und", "sowie", "überdies", "ferner",
+      "weiterhin", "darüber hinaus", "zudem", "ebenso"
+    ],
+    "contrastive": [
+      "jedoch", "aber", "allerdings", "dennoch", "dagegen", "hingegen",
+      "andererseits", "im gegensatz", "demgegenüber"
+    ],
+    "causal": [
+      "daher", "somit", "da", "aufgrund", "folglich", "demnach",
+      "infolgedessen", "deshalb", "weil", "deswegen"
+    ],
+    "temporal": [
+      "zunächst", "dann", "anschließend", "schließlich", "bevor",
+      "nachdem", "während", "daraufhin", "danach"
+    ],
+    "conclusive": [
+      "insgesamt", "zusammenfassend", "abschließend", "letztendlich",
+      "im ergebnis", "somit"
+    ]
+  },
+  "style_characteristics": {
+    "tone": "objective and analytical",
+    "formality": "academic-formal",
+    "typical_elements": [
+      "Evidence-based argumentation",
+      "Critical discussion of limitations",
+      "Structured paragraph organization",
+      "Use of semicolons for complex connections"
+    ]
+  },
+  "german_features": {
+    "formality": "formal",
+    "has_compound_words": true,
+    "compound_word_examples": ["Hochschulbildung", "Lernplattformen"],
+    "uses_umlauts": true
+  },
+  "avoid": [
+    "Overly casual language",
+    "Unsupported claims",
+    "First-person narrative in formal sections"
+  ]
+}

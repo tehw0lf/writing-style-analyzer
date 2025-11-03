@@ -1,0 +1,108 @@
+# Writing Style Analyzer Configuration
+# This file configures the local LLM and analysis parameters
+
+# Model Configuration
+model:
+  # Model type: 'transformers' or 'llama-cpp'
+  type: "transformers"
+
+  # For transformers: HuggingFace model name
+  # Recommended multilingual models with good German support:
+  # - "Qwen/Qwen2.5-3B-Instruct" (excellent multilingual, German support)
+  # - "meta-llama/Llama-3.2-3B-Instruct" (good multilingual)
+  # - "mistralai/Mistral-7B-Instruct-v0.2" (good German support, larger)
+  name: "Qwen/Qwen2.5-3B-Instruct"
+
+  # For llama-cpp: Path to GGUF model file
+  # Example: "/path/to/model.gguf"
+  path: null
+
+  # Device: 'cuda', 'mps', or 'cpu'
+  device: "auto"  # auto-detect best available device
+
+  # Model parameters
+  temperature: 0.3  # Lower = more deterministic, higher = more creative (0.0-1.0)
+  max_tokens: 2048  # Maximum tokens to generate per analysis chunk
+  top_p: 0.9  # Nucleus sampling parameter
+
+  # Context window size (model dependent)
+  max_context_length: 4096
+
+# Analysis Configuration
+analysis:
+  # Chunk size for processing long texts (in characters)
+  chunk_size: 8000
+
+  # Minimum number of sentences to analyze
+  min_sentences: 10
+
+  # Languages to detect and analyze
+  supported_languages:
+    - de  # German
+    - en  # English
+
+  # Primary language (used for system prompts)
+  primary_language: "de"
+
+  # Calculate detailed lexical statistics
+  detailed_metrics: true
+
+  # Analyze language-specific features (German compound words, formality, etc.)
+  language_specific_features: true
+
+# File Processing
+files:
+  # Supported file extensions
+  extensions:
+    - ".txt"
+    - ".md"
+    - ".tex"   # LaTeX (native support, better than PDF!)
+    - ".pdf"
+    - ".docx"  # Microsoft Word
+    - ".odt"   # LibreOffice Writer
+
+  # Encoding (use UTF-8 for German umlauts)
+  encoding: "utf-8"
+
+  # Recursive directory scanning
+  recursive: true
+
+  # Ignore patterns (glob patterns)
+  ignore_patterns:
+    - "*.bak"
+    - "*.tmp"
+    - ".git/*"
+    - "__pycache__/*"
+
+# Output Configuration
+output:
+  # Default output directory
+  profiles_dir: "profiles"
+
+  # Pretty-print JSON (easier to read, larger files)
+  pretty_json: true
+
+  # Include source text snippets in profile
+  include_examples: true
+
+  # Number of example snippets to include
+  max_examples: 5
+
+# Paths
+paths:
+  # Default input directory
+  default_input: "texts"
+
+  # Templates directory
+  templates_dir: "templates"
+
+# Logging
+logging:
+  # Log level: DEBUG, INFO, WARNING, ERROR
+  level: "INFO"
+
+  # Log to file
+  file: "analyzer.log"
+
+  # Show progress bars
+  progress_bars: true

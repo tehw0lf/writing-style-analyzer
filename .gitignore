@@ -1,0 +1,80 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv
+
+# UV
+.uv/
+uv.lock
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Model cache
+.cache/
+models/
+*.bin
+*.gguf
+
+# Logs
+*.log
+analyzer.log
+
+# User-specific texts (PRIVATE - never commit personal writing)
+texts/*
+!texts/examples/
+
+# User-specific profiles (PRIVATE - never commit personal profiles)
+user-profiles/
+
+# Personal collection scripts (PRIVATE)
+collect_readmes.sh
+collect_my_readmes.sh
+
+# Repository structure with personal profile references (PRIVATE)
+STRUCTURE.md
+
+# Personal test baselines and notes (PRIVATE - never commit)
+# Public tests use tests/fixtures/ and tests/baselines/ only
+tests/baselines/personal_*
+tests/personal_test_results/
+tests/TEST_SUITE_SUMMARY.md
+
+# Private data - text sources (keep example texts in repo)
+templates/
+
+# Temporary files
+*.tmp
+*.bak
+.temp/
+
+# HuggingFace cache
+~/.cache/huggingface/

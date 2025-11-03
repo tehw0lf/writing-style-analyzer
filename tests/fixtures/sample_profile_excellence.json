@@ -1,0 +1,94 @@
+{
+  "profile_name": "generic-academic-excellence",
+  "created_at": "2025-01-15T10:00:00Z",
+  "analyzed_files": 2,
+  "primary_language": "de",
+  "languages_detected": ["de"],
+  "metrics": {
+    "basic": {
+      "total_words": 1000,
+      "total_sentences": 48,
+      "avg_sentence_length": 20.8,
+      "total_paragraphs": 9,
+      "avg_paragraph_length": 5.3,
+      "lexical_diversity": 0.38,
+      "complexity_ratio": 0.32
+    },
+    "transitions": {
+      "total_transitions": 48,
+      "transition_density": 4.8,
+      "by_category": {
+        "additive": {"count": 11, "examples": ["außerdem", "zusätzlich", "darüber hinaus"]},
+        "contrastive": {"count": 9, "examples": ["jedoch", "allerdings", "dennoch"]},
+        "causal": {"count": 13, "examples": ["daher", "somit", "folglich"]},
+        "temporal": {"count": 8, "examples": ["zunächst", "dann", "schließlich"]},
+        "conclusive": {"count": 3, "examples": ["insgesamt", "zusammenfassend"]},
+        "conditional": {"count": 2, "examples": ["wenn", "falls"]},
+        "clarifying": {"count": 1, "examples": ["das heißt"]},
+        "concessive": {"count": 1, "examples": ["obwohl"]}
+      }
+    },
+    "voice_and_style": {
+      "passive_ratio": 0.35,
+      "semicolon_usage": 0.025,
+      "formality_level": "academic-formal"
+    }
+  },
+  "transitions": {
+    "additive": [
+      "außerdem", "zusätzlich", "und", "sowie", "überdies", "ferner",
+      "weiterhin", "darüber hinaus", "zudem", "ebenso", "gleichermaßen"
+    ],
+    "contrastive": [
+      "jedoch", "aber", "allerdings", "dennoch", "dagegen", "hingegen",
+      "andererseits", "im gegensatz", "demgegenüber", "vielmehr"
+    ],
+    "causal": [
+      "daher", "somit", "da", "aufgrund", "folglich", "demnach",
+      "infolgedessen", "deshalb", "weil", "deswegen", "aus diesem grund"
+    ],
+    "temporal": [
+      "zunächst", "dann", "anschließend", "schließlich", "bevor",
+      "nachdem", "während", "daraufhin", "danach", "zuvor"
+    ],
+    "conclusive": [
+      "insgesamt", "zusammenfassend", "abschließend", "letztendlich",
+      "im ergebnis", "somit", "insofern"
+    ],
+    "conditional": [
+      "wenn", "falls", "sofern", "insofern", "vorausgesetzt",
+      "unter der bedingung"
+    ],
+    "clarifying": [
+      "das heißt", "mit anderen worten", "genauer gesagt", "d.h.",
+      "anders ausgedrückt"
+    ],
+    "concessive": [
+      "obwohl", "trotzdem", "obgleich", "wenngleich", "trotz",
+      "nichtsdestotrotz"
+    ]
+  },
+  "style_characteristics": {
+    "tone": "objective, analytical, and nuanced",
+    "formality": "academic-formal with sophisticated transitions",
+    "typical_elements": [
+      "Strong evidence-based argumentation",
+      "Critical discussion with multiple perspectives",
+      "Sophisticated transition usage (8 categories)",
+      "Balanced passive/active voice ratio",
+      "Use of conditional and concessive structures"
+    ]
+  },
+  "german_features": {
+    "formality": "formal",
+    "has_compound_words": true,
+    "compound_word_examples": ["Paradigmenwechsel", "Entscheidungsfindung"],
+    "uses_umlauts": true
+  },
+  "avoid": [
+    "Overly casual language",
+    "Unsupported claims",
+    "Excessive passive voice",
+    "Simple transition words when sophisticated alternatives exist"
+  ]
+}

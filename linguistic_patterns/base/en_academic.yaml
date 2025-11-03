@@ -1,0 +1,140 @@
+# English Academic Writing - Transition Words and Phrases
+#
+# Sources:
+# - Elite Editing (2024). "50 linking words to use in academic writing"
+#   https://www.eliteediting.com.au/50-linking-words-to-use-in-academic-writing/
+# - Wordvice (2025). "Effective Transition Words for Research Papers"
+#   https://blog.wordvice.com/common-transition-terms-used-in-academic-papers/
+# - Paperpal (2025). "4 Types of Transition Words for Research Papers"
+#   https://paperpal.com/blog/academic-writing-guides/4-types-of-transition-words-for-research-papers
+#
+# Note: These are standard English connectors used in academic and scholarly writing.
+# The analyzer will also discover additional patterns from your specific texts.
+
+version: "1.0.0"
+language: "en"
+style: "academic"
+last_updated: "2025-10-27"
+
+transitions:
+  additive:
+    description: "Adding information, emphasis, or examples"
+    words:
+      - furthermore
+      - moreover
+      - additionally
+      - also
+      - besides
+      - in addition
+      - for instance
+      - for example
+      - to illustrate
+      - to clarify
+      - further
+      - namely
+      - in fact
+      - especially
+      - typically
+      - first
+      - second
+      - third
+      - not only ... but also
+
+  contrastive:
+    description: "Contrasting ideas or showing alternatives"
+    words:
+      - however
+      - nevertheless
+      - nonetheless
+      - yet
+      - although
+      - whereas
+      - on the other hand
+      - conversely
+      - alternatively
+      - instead
+      - on the contrary
+      - in contrast
+      - despite
+      - in spite of
+      - while
+      - even so
+
+  causal:
+    description: "Showing cause, effect, or logical consequence"
+    words:
+      - therefore
+      - thus
+      - consequently
+      - hence
+      - accordingly
+      - as a result
+      - because
+      - since
+      - for this reason
+      - it follows that
+      - this suggests that
+
+  temporal:
+    description: "Indicating time sequence or order"
+    words:
+      - first
+      - then
+      - subsequently
+      - finally
+      - lastly
+      - before
+      - after
+      - meanwhile
+      - simultaneously
+      - previously
+      - afterwards
+
+  conclusive:
+    description: "Summarizing or concluding arguments"
+    words:
+      - in conclusion
+      - to summarize
+      - to sum up
+      - overall
+      - ultimately
+      - in summary
+      - it can be concluded that
+      - as can be seen
+      - given the above
+      - as described
+      - finally
+
+  comparative:
+    description: "Showing similarities or comparisons"
+    words:
+      - likewise
+      - similarly
+      - correspondingly
+      - equally
+      - in the same way
+      - by comparison
+      - compared to
+
+  limitation:
+    description: "Expressing limitations or contradictions"
+    words:
+      - admittedly
+      - although
+      - despite
+      - in spite of
+      - nevertheless
+      - nonetheless
+      - on the contrary
+      - even so
+      - while
+
+notes: |
+  These transition words are based on academic English style guides and
+  scholarly writing resources. They represent standard usage in research
+  papers, essays, and academic publications.
+
+  The analyzer will supplement these base patterns with:
+  - Transition words and phrases discovered in your specific texts
+  - Your personal usage patterns and preferences
+  - Context-specific variations

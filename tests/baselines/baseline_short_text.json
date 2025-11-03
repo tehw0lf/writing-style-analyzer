@@ -1,0 +1,62 @@
+{
+  "word_count": 96,
+  "sentence_count": 8,
+  "avg_sentence_length": 12.0,
+  "paragraph_count": 3,
+  "avg_paragraph_length": 2.67,
+  "semicolons": 1,
+  "total_transitions": 12,
+  "transition_density": 12.5,
+  "transitions_by_category": {
+    "additive": {
+      "count": 5,
+      "words": [
+        "außerdem (1)",
+        "und (3)",
+        "darüber hinaus (1)"
+      ]
+    },
+    "contrastive": {
+      "count": 2,
+      "words": [
+        "allerdings (1)",
+        "dennoch (1)"
+      ]
+    },
+    "causal": {
+      "count": 2,
+      "words": [
+        "somit (1)",
+        "folglich (1)"
+      ]
+    },
+    "temporal": {
+      "count": 1,
+      "words": [
+        "zunächst (1)"
+      ]
+    },
+    "conclusive": {
+      "count": 2,
+      "words": [
+        "insgesamt (1)",
+        "somit (1)"
+      ]
+    },
+    "conditional": {
+      "count": 0,
+      "words": []
+    },
+    "clarifying": {
+      "count": 0,
+      "words": []
+    },
+    "concessive": {
+      "count": 0,
+      "words": []
+    }
+  },
+  "passive_indicators": 1,
+  "passive_percentage_estimate": 12.5,
+  "lexical_diversity": 0.823
+}

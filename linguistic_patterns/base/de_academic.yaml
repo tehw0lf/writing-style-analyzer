@@ -1,0 +1,134 @@
+# German Academic Writing - Transition Words (Konnektoren)
+#
+# Sources:
+# - Breindl, E., Volodina, A., & Waßner, U. H. (2014). Handbuch der deutschen Konnektoren.
+#   De Gruyter. [Referenced in academic research on scientific German]
+# - GWriters.de (2024). "Verbindungswörter Deutsch: Die ultimative Liste der Konnektoren"
+#   https://gwriters.de/blog/verbindungswoerter-deutsch
+# - Talkpal.ai (2025). "Master German C1 Konnektoren: Essential Connectors for Fluent Writing"
+#   https://talkpal.ai/master-german-c1-konnektoren-essential-connectors-for-fluent-writing/
+#
+# Note: These are standard German connectors used in academic and scientific writing.
+# The analyzer will also discover additional patterns from your specific texts.
+
+version: "1.0.0"
+language: "de"
+style: "academic"
+last_updated: "2025-10-27"
+
+transitions:
+  additive:
+    description: "Adding information or expanding arguments"
+    words:
+      - außerdem          # besides, moreover
+      - darüber hinaus    # furthermore, beyond that
+      - zudem             # in addition, additionally
+      - zusätzlich        # additionally
+      - ferner            # furthermore
+      - überdies          # moreover
+      - und               # and
+      - sowie             # as well as
+      - nicht nur ... sondern auch  # not only ... but also
+
+  contrastive:
+    description: "Contrasting ideas or presenting alternatives"
+    words:
+      - jedoch            # however
+      - aber              # but
+      - allerdings        # however, though
+      - dennoch           # nevertheless
+      - trotzdem          # nevertheless, despite
+      - dagegen           # on the other hand, against that
+      - hingegen          # on the other hand
+      - andererseits      # on the other hand
+      - obwohl            # although
+      - sondern           # but rather
+      - einerseits        # on the one hand
+      - im Gegensatz zu   # in contrast to
+      - während           # while, whereas
+
+  causal:
+    description: "Showing cause, reason, or consequence"
+    words:
+      - daher             # therefore
+      - deshalb           # therefore, for this reason
+      - deswegen          # for this reason
+      - folglich          # consequently
+      - somit             # thus
+      - darum             # therefore
+      - da                # since, because
+      - weil              # because
+      - denn              # for, because
+      - aus diesem Grund  # for this reason
+      - aufgrund          # due to
+      - wegen             # because of
+      - infolgedessen     # as a consequence
+      - demzufolge        # consequently
+      - demnach           # accordingly
+
+  temporal:
+    description: "Indicating time sequence or order"
+    words:
+      - zunächst          # first, initially
+      - dann              # then
+      - anschließend      # subsequently, afterwards
+      - schließlich       # finally
+      - zuletzt           # lastly
+      - bevor             # before
+      - nachdem           # after
+      - während           # while, during
+      - solange           # as long as
+      - als               # when (past)
+      - sobald            # as soon as
+      - danach            # after that
+      - zuvor             # before that
+
+  conclusive:
+    description: "Summarizing or concluding arguments"
+    words:
+      - zusammenfassend   # in summary
+      - insgesamt         # overall, altogether
+      - abschließend      # in conclusion
+      - fazit             # conclusion (noun form)
+      - kurz gesagt       # in short
+      - folglich          # consequently
+      - demnach           # accordingly
+      - also              # so, thus
+      - zusammenfassend lässt sich sagen  # in summary it can be said
+
+  conditional:
+    description: "Expressing conditions or hypotheses"
+    words:
+      - wenn              # if
+      - falls             # in case
+      - sofern            # provided that
+      - angenommen        # assuming
+      - nehmen wir an     # let's assume
+
+  concessive:
+    description: "Expressing despite/although relationships"
+    words:
+      - obwohl            # although
+      - trotzdem          # nevertheless
+      - dennoch           # nevertheless
+      - wenngleich        # although, even though
+      - obgleich          # although
+      - trotz             # despite
+
+  clarifying:
+    description: "Clarifying or specifying statements"
+    words:
+      - das heißt         # that is, i.e.
+      - nämlich           # namely
+      - mit anderen Worten    # in other words
+      - konkret bedeutet das  # concretely this means
+      - genauer gesagt    # more precisely
+
+notes: |
+  These connectors are based on academic German style guides and linguistic research.
+  They represent standard usage in scientific and scholarly writing.
+
+  The analyzer will supplement these base patterns with:
+  - Connectors discovered in your specific texts via LLM analysis
+  - Frequency and usage patterns from your writing
+  - Context-specific variations

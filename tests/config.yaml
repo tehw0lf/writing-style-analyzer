@@ -1,0 +1,148 @@
+# Test Suite Configuration
+# Defines tolerances and thresholds for automated testing
+# Uses ONLY synthetic/generic test data (no personal profiles/texts)
+
+# Metric tolerances (how much deviation from expected is acceptable)
+tolerances:
+  # Word count: ±15% from target is acceptable
+  word_count_percentage: 15.0
+
+  # Sentence length: ±3 words from expected is acceptable
+  sentence_length_words: 3.0
+
+  # Transition density: ±1.5 per 100 words is acceptable
+  transition_density: 1.5
+
+  # Passive voice: ±10 percentage points is acceptable
+  passive_voice_percentage: 10.0
+
+  # Lexical diversity: ±0.05 is acceptable
+  lexical_diversity: 0.05
+
+  # Category coverage: all target categories must appear (0 missing)
+  missing_categories: 0
+
+# Regression test settings
+regression:
+  # Maximum allowed deviation from baseline (percentage)
+  max_deviation_percentage: 5.0
+
+  # Compare these metrics in regression tests
+  metrics_to_compare:
+    - word_count
+    - avg_sentence_length
+    - total_transitions
+    - transition_density
+    - passive_percentage_estimate
+    - lexical_diversity
+
+# Profile validation requirements
+profile_validation:
+  required_fields:
+    - profile_name
+    - created_at
+    - analyzed_files
+    - primary_language
+    - metrics
+    - transitions
+
+  required_metric_fields:
+    - basic
+    - transitions
+    - voice_and_style
+
+  required_transition_categories:
+    - additive
+    - contrastive
+    - causal
+    - temporal
+    - conclusive
+
+  # Excellence profile requires these additional categories
+  excellence_additional_categories:
+    - conditional
+    - clarifying
+    - concessive
+
+# Test data locations (PUBLIC - uses only synthetic data)
+paths:
+  fixtures_dir: "tests/fixtures"
+  baselines_dir: "tests/baselines"
+
+# Personal data locations (PRIVATE - gitignored, optional for local testing)
+personal_data:
+  profiles_dir: "user-profiles/profiles"
+  test_results_dir: "user-profiles/test-prompts/results"
+
+  # Note: Personal tests require --use-personal-data flag
+  # Never run in CI, never committed to repo
+
+# LLM Validation Tests (OPTIONAL - requires API keys)
+# Tests that profiles actually work with real LLMs
+# Skipped automatically if no API key is configured
+llm_validation:
+  # Enable if API keys are present (auto-detected via env vars)
+  # Required env vars:
+  #   - ANTHROPIC_API_KEY for Anthropic/Claude
+  #   - OPENAI_API_KEY for OpenAI/GPT models
+  #   - OPENWEBUI_API_KEY + OPENWEBUI_BASE_URL for Open WebUI
+
+  # Provider configurations
+  providers:
+    anthropic:
+      enabled: true
+      model: "claude-sonnet-4-20250514"  # Claude Sonnet 4.5
+      max_tokens: 2048
+      temperature: 0.3
+
+    openai:
+      enabled: true
+      model: "gpt-4-turbo"
+      max_tokens: 2048
+      temperature: 0.3
+
+    openwebui:
+      enabled: true
+      # Model is configurable - Open WebUI can run any model
+      # Common examples: "llama3.2:3b", "qwen2.5:3b", "mistral:7b"
+      model: "qwen2.5:3b"
+      max_tokens: 2048
+      temperature: 0.3
+      # Base URL is required (e.g., "http://localhost:11434/v1" for Ollama)
+      # Set via OPENWEBUI_BASE_URL environment variable
+
+  # Test configuration
+  test_settings:
+    # Word counts to test (short, medium, long)
+    test_word_counts: [150, 500, 1000]
+
+    # Number of runs per test to check consistency
+    consistency_runs: 2
+
+    # Timeout per API call (seconds)
+    timeout: 60
+
+    # Profiles to test (from fixtures/)
+    test_profiles:
+      - "sample_profile_default.json"
+      - "sample_profile_excellence.json"
+
+    # Language to test
+    primary_language: "de"  # German
+
+  # Validation thresholds (more lenient than unit tests - LLMs have variance)
+  validation:
+    # Word count: ±25% (LLMs are less precise than unit tests)
+    word_count_tolerance: 25.0
+
+    # Sentence length: ±5 words
+    sentence_length_tolerance: 5.0
+
+    # Passive voice: ±15 percentage points
+    passive_voice_tolerance: 15.0
+
+    # At least 70% of expected transition categories should appear
+    min_category_coverage: 0.7
+
+    # Transition density: ±3.0 per 100 words
+    transition_density_tolerance: 3.0

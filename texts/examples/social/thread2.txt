@@ -1,0 +1,12 @@
+Hot take: Docker isn't always the answer.
+
+Yes, containers solve many problems. But they also add complexity. For simple projects, traditional deployment might be perfectly fine.
+
+Consider:
+- Does your app need complex dependencies?
+- Are you deploying to multiple environments?
+- Do you have the infrastructure to manage containers?
+
+If you answered no to most of these, you might not need Docker yet. Don't let FOMO drive your architecture decisions.
+
+That said, learning Docker is valuable. Just don't force it where it doesn't fit.
