@@ -1,6 +1,6 @@
 [project]
 name = "writing-style-analyzer"
-version = "0.1.0"
+version = "1.0.0"
 description = "A local writing style analyzer using LLMs for German and English text"
 readme = "README.md"
 requires-python = ">=3.10"
