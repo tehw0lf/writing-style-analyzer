@@ -562,6 +562,24 @@ user-profiles/
 
 ## Changelog
 
+### v1.0.0 (2025-11-03) - Initial Public Release 🎉
+- **First stable release:** Production-ready writing style analyzer
+- **MIT License:** Open source and freely usable
+- **GitHub Actions CI/CD:** Automated testing, linting, formatting, and releases
+  - Uses reusable workflows for consistent builds
+  - Automated version extraction and release creation
+  - Comprehensive test suite (49 tests, 95% coverage, <1s runtime)
+- **Repository publishing:** Public GitHub repository with comprehensive documentation
+  - 10 relevant topics/tags for discoverability
+  - Automated wheel and source distribution builds
+  - Professional release notes and changelog
+- **Code quality improvements:**
+  - Fixed all linting issues (modern Python type hints)
+  - Consistent code formatting with black
+  - Clean codebase ready for contributions
+- **Privacy-first design:** All personal data gitignored by default
+- **Documentation:** Complete setup guides, QUICKSTART, and developer documentation
+
 ### v0.5.0 (2025-10-27)
 - **Hybrid Pattern Discovery System:** Major upgrade to profile generation
   - Combines authoritative patterns from Duden/academic style guides with LLM-discovered patterns
