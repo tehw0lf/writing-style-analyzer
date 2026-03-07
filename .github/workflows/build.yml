@@ -25,7 +25,6 @@ jobs:
       test: "run pytest tests/ -v --cov=. --cov-report=term-missing"
       build_branch: "build"
       build_main: "build"
-      event_name: ${{ github.event_name }}
       artifact_path: "dist"
       publish_github_release: "true"
       publish_python_libraries: "false"
