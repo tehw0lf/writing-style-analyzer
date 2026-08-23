@@ -30,9 +30,8 @@ This is a Python-based writing style analyzer that uses local Large Language Mod
 - `academic-excellence-v2`: 240 patterns, 8 categories (high-stakes publications)
 
 **Documentation:**
-- Validation results: `user-profiles/PROFILE_TEST_V2.md`
+- Validation results: `user-profiles/archive/PROFILE_TEST_V2.md`
 - Usage guide: `user-profiles/PROFILE_GUIDE.md`
-- Quick reference: `user-profiles/PROFILES_QUICKREF.md`
 - V1 archive: `user-profiles/v1-archive/` (deprecated)
 
 ## Project Structure
@@ -341,7 +340,7 @@ model:
   - Combines authoritative base patterns with LLM discovery
   - 3.6x more linguistic patterns (222-240 vs 62-70)
   - 3 new transition categories (conditional, clarifying, concessive)
-  - Validated as superior to v1 (see `user-profiles/PROFILE_TEST_V2.md`)
+  - Validated as superior to v1 (see `user-profiles/archive/PROFILE_TEST_V2.md`)
 - [x] Profile comparison mode - See `user-profiles/v1-archive/PROFILE_COMPARISON_V1.md` (v1)
 - [x] Profile merge mode - Created synthetic profiles (v1: deprecated, v2: active)
 - [x] LaTeX (.tex) file support - Added in v0.3.0
@@ -381,9 +380,8 @@ Or more specifically:
 - **config.yaml**: Inline comments for all configuration options
 
 **Profile Documentation (V2):**
-- **user-profiles/PROFILE_TEST_V2.md**: Complete v2 validation testing and results
+- **user-profiles/archive/PROFILE_TEST_V2.md**: Complete v2 validation testing and results
 - **user-profiles/PROFILE_GUIDE.md**: Comprehensive v2 profile usage guide
-- **user-profiles/PROFILES_QUICKREF.md**: Quick reference for v2 profiles
 - **user-profiles/AI_PROMPTS.md**: Ready-to-use prompt templates with v2 profiles
 - **user-profiles/profiles/academic-default.md**: Default v2 profile (222 transitions)
 - **user-profiles/profiles/academic-excellence.md**: Excellence v2 profile (240 transitions)
